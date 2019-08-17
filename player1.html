@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="fontAwesome/css/all.css" rel="stylesheet">
+    <script src="fontAwesome/js/all.js"></script>
+    <link rel="stylesheet" href="aos/aos.css">
+    <script src="aos/aos.js"></script>
+    <title>X-O Game</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body data-aos="zoom-in" >
+      <div class="row justify-content-center">
+        <div class="col-4 address">
+          <h1 style="color: white"  >X-O Game</span></h1>
+          <h4 style="font-family: monospace">player1 is : <span style="color: white">O</span></h4>
+          <h4 style="font-family: monospace">Computer is : <span style="color: white">X</span</h4>
+        </div>
+      </div>
+      <div class="container-fluid" id="xo-Game">        
+                  
+      <div class="row justify-content-center">
+        <div id="playOne" style="display: block;font-size: 25px;font-family: monospace;color: rgb(5, 212, 22)"></div>
+        <div id="playTwo" style="display: none;font-size: 25px;font-family: monospace;color: rgb(5, 212, 22)"></div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="box1" id="box">
+            <input id="n1" class="in-box" type="text" name="un" onclick="clickOne('n1')" readonly>
+        </div>
+        <div class="box2" id="box">
+            <input id="n2" class="in-box" type="text" name="un" onclick="clickOne('n2')" readonly>
+        </div>
+        <div class="box3" id="box">
+            <input id="n3" class="in-box" type="text" name="un" onclick="clickOne('n3')" readonly>
+        </div>
+      </div> 
+      <div class="row justify-content-center">
+        <div class="box4" id="box">
+            <input id="n4" class="in-box" type="text" name="un" onclick="clickOne('n4')" readonly>
+        </div>
+        <div class="box5" id="box">
+            <input id="n5" class="in-box" type="text" name="un" onclick="clickOne('n5')" readonly>
+        </div>
+        <div class="box6" id="box">
+            <input id="n6" class="in-box" type="text" name="un" onclick="clickOne('n6')" readonly>
+        </div>
+      </div> 
+      <div class="row justify-content-center">
+        <div class="box7" id="box">
+            <input id="n7" class="in-box" type="text" name="un" onclick="clickOne('n7')" readonly>
+        </div>
+        <div class="box8" id="box">
+            <input id="n8" class="in-box" type="text" name="un" onclick="clickOne('n8')" readonly>
+        </div>
+        <div class="box9" id="box">
+            <input id="n9" class="in-box" type="text" name="un" onclick="clickOne('n9')" readonly>
+        </div>
+      </div>    
+    </div>
+    <div class="row justify-content-center" style="margin-top: 20px;">
+      <div><p id="win-playerone" style="display: none;color: rgb(223, 226, 27);font-family: monospace;font-size: 20px;">player one is winner <i style="color: rgb(223, 226, 27);font-size: 25px;" class="fas fa-trophy"></i></p></div> 
+      <div><p id="win-playertwo" style="display: none;color: rgb(223, 226, 27);font-family: monospace;font-size: 20px;">computer is winner <i style="color: rgb(223, 226, 27);font-size: 25px;" class="fas fa-trophy"></i></p></div> 
+      <div><p id="draw" style="display: none;color: rgb(223, 226, 27);font-family: monospace;font-size: 20px;"> Draw </p></div>
+    </div>
+    <div class="row justify-content-center">
+        <button class="button" id="back-btn" onclick="back()" style="display: none">Start again</button>
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/player1.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      AOS.init({
+          duration:1000,
+      });
+    </script>
+</body>
+</html>
